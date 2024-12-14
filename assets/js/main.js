@@ -193,43 +193,15 @@ $(document).ready(function () {
   }
 
 
-  if ($(".department_slider").length) {
-    $(".department_slider").slick({
-      slidesToShow: 8,
-      arrows: false,
-      dots: true,
-      slidesToScroll: 8,
+  if ($(".our_principles_slider").length) {
+    $(".our_principles_slider").slick({
+      slidesToShow: 1,
+      arrows: true,
+      dots: false,
       infinite: false,
       rtl: currentDir == "rtl" ? true : false,
-      responsive: [
-        {
-          breakpoint: 1300,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 1100,
-          settings: {
-            slidesToShow: 2.7,
-            slidesToScroll: 1,
-            infinite: false,
-            dots: false,
-          },
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2.1,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+      prevArrow: $(".our_principles .prev"),
+      nextArrow: $(".our_principles .next"),
     });
   }
 
