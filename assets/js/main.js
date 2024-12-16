@@ -214,7 +214,8 @@ $(document).ready(function () {
       duration: 1.2,
       ease: "expo.inOut",
     })
-    .to(".splach .splach_behind", { top: "-100%", duration: 1.2, ease: "expo.inOut" });
+    .to(".splach .splach_behind", { top: "-100%", duration: 1.2, ease: "expo.inOut" })
+    .to(".splach", { zIndex: "-1", opacity:0, duration: 1.2, ease: "expo.inOut" });
 
   loadinAnimation.pause();
 
