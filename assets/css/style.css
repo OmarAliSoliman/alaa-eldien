@@ -592,12 +592,33 @@ p {
 .custom_navbar .logo_links li:hover a::after {
   width: 80%;
 }
+.custom_navbar .search_lang {
+  position: relative;
+}
 .custom_navbar .search_lang a {
   display: inline-block;
   margin-left: 15px;
   font-size: 1.5rem;
   color: #000;
   margin-top: 5px;
+  cursor: pointer;
+}
+.custom_navbar .search_lang #searchInput {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 5;
+  border-radius: 0;
+  max-width: 100%;
+  min-width: 300px;
+}
+.custom_navbar .search_lang #searchInput input {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px 5px;
+  padding-bottom: 8px;
+  min-width: 220px;
 }
 .custom_navbar .search_lang .dropdown a.dropdown-item {
   font-size: 1rem;
@@ -611,6 +632,16 @@ p {
 .custom_navbar .search_lang .dropdown .btn:focus {
   outline: 0 !important;
   box-shadow: none !important;
+}
+
+.search_open {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.3;
+  position: fixed;
+  z-index: 3;
+  display: none;
 }
 
 .slider_style .slick-dots {
@@ -1546,6 +1577,9 @@ p {
     right: 0;
   }
   .who_us_container .section_content p {
+    margin-top: 0;
+  }
+  .who_us_container .section_content li p {
     margin-top: 20px;
   }
   .upcomming_events_page .event_img .card_img .date {
@@ -1633,6 +1667,21 @@ p {
   }
   .who_us_container .section_content {
     padding-left: 0;
+  }
+  .our_principles .our_principles_img img {
+    width: 100px;
+  }
+  .our_principles .our_principles_img .our_principles .our_principles_card {
+    padding: 12px 12px;
+  }
+  .our_principles .card_cont h6 {
+    font-size: 1.4rem;
+  }
+  .our_principles .card_cont p {
+    font-size: 1rem;
+  }
+  .our_principles .card_img {
+    height: 257px;
   }
 }
 /* ================================================================ */

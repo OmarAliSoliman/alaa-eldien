@@ -204,6 +204,18 @@ $(document).ready(function () {
     });
   }
 
+
+  $(".search_lang a").click(function (e) {
+    e.preventDefault();
+    $(this).parent().find("#searchInput").css('display', 'block');
+   $(".search_open").css('display', 'block');
+  })
+
+  $(".search_open").click(function (e) {
+    $(this).parent().find("#searchInput").css('display', 'none');
+    $(this).css('display', 'none');
+  })
+
   // $("html").addClass("splash-active");
 
   AOS.init();
