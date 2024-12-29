@@ -837,7 +837,7 @@ p {
 }
 
 .home_project {
-  background-image: url("../images/bg-serv.png");
+  background-image: url("../images/bg-serv.webp");
   padding: 35px 0;
   margin-top: 60px;
 }
@@ -1233,7 +1233,7 @@ p {
 
 .contact_us {
   margin-top: 150px;
-  background-image: url("../images/CONTACT-IMG.png");
+  background-image: url("../images/CONTACT-IMG.webp");
   padding: 50px 0;
 }
 .contact_us .contact_contet li {
@@ -1444,7 +1444,7 @@ p {
   padding: 35px 0 29px 0;
   position: relative;
   overflow: hidden;
-  background-image: url("../images/footer.png");
+  background-image: url("../images/footer.webp");
   background-position: center center;
   background-size: cover;
 }
